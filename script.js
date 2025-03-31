@@ -9,6 +9,9 @@ const myObserver = new IntersectionObserver((entries) =>{
 })
 
 const elements = document.querySelectorAll('.hidden')
+const test = document.querySelectorAll('.inside')
+
+test.forEach((element) => myObserver.observe(element))
 
 elements.forEach((element) => myObserver.observe(element))
 
@@ -17,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.getElementById("loader").style.display = "none";
         document.getElementById("content").style.display = "block";
-    }, 3000);
+    }, 4200);
 });
