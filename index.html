@@ -1,142 +1,180 @@
 <html lang="pt-BR">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROP</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-  </head>
-  <body>
-    <div class="loader" id="loader">
-      <div class="terminal-loader">
-        <div class="terminal-header">
-          <div class="terminal-controls"></div>
-        </div>
-        <div class="text">Welcome...</div>
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROP</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+</head>
+
+<body>
+  <div class="loader" id="loader">
+    <div class="terminal-loader">
+      <div class="terminal-header">
+        <div class="terminal-controls"></div>
+      </div>
+      <div class="text">Rodrigo Peixoto</div>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <h1>Rodrigo Oliveira Peixoto</h1>
+        <p>Engenharia da Computação</p>
+      </div>
+      <img src="Rodrigo.png" alt="Rodrigo" class="header-img" />
+    </div>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#academia">Formação</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hidden" id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>
+      Sou um apaixonado por tecnologias, atualmente estou cursando o 6°
+      semestre de Engenharia da Computação na universidade Senai Cimatec,
+      local onde adquiri conhecimentos na área de programação, e também
+      consegui ampliar meu interesse em computação.
+    </p>
+    <p>
+      Desenvolvi alguns projetos durante a minha formação acadêmica, nos quais
+      pude adquirir proficiência nas mais diversas linguagens de programação,
+      podendo citar, entre as principais, Python, C, C++, HTML, CSS,
+      JavaScript, SQL.
+    </p>
+  </section>
+  <section class="hidden" id="academia">
+    <h2>Formação Acadêmica</h2>
+    <div class="inside">
+      <h3>Graduação</h3>
+      <div class="align"></div>
+      <p>Centro universitário Senai Cimatec</p> <span>2022 - atualmente</span>
+    </div>
+    <div class="inside">
+      <h3>Ensino Médio</h3>
+      <div class="align"></div>
+      <p>Colégio Mendel Vilas</p> <span>2019 - 2021</span>
+    </div>
+  </section>
+  <section class="hidden" id="projetos">
+    <h2>Projetos</h2>
+    <div class="inside">
+      <h3>Ticket Generator - Frontend Mentor</h3>
+      <div class="align">
+        <p>
+          Desafio da plataforma online Frontend Mentor, onde o objetivo
+          consistia em recriar um site seguindo o design proposto pela
+          plataforma. Neste desafio, o usuário deveria inserir uma imagem, e
+          algumas informações, como o seu nome completo, email e conta do
+          Github, e como resultado, o site encaminharia o usuário para outra
+          janela, com um ticket gerado para o evento. O projeto foi
+          desenvolvido com HTML, CSS e JavaScript. E está disponível para
+          acesso no meu
+          <a href="https://github.com/ROpeixoto/Ticket-Generator">github</a> e
+          na pré visualização da tela ao lado.
+        </p>
+        <iframe src="https://ticketgenerator-peixoto.vercel.app/" frameborder="0" class="ticket"></iframe>
       </div>
     </div>
-
-    <header>
-      <div class="header-container">
-        <div></div>
-        <div class="header-content">
-          <h1>Rodrigo Oliveira Peixoto</h1>
-          <p>Desenvolvedor Web</p>
-        </div>
-        <img src="Rodrigo.png" alt="Rodrigo" class="header-img" />
+    <div class="inside">
+      <h3>Calculadora de Idade - Frontend Mentor</h3>
+      <div class="align">
+        <p>
+          Desafio da plataforma online Frontend Mentor, no qual o objetivo
+          consistia em recriar um site seguindo o design proposto pela
+          plataforma. Neste desafio, o usuário deveria criar uma calculadora
+          de idade, onde seria inserida a data de nascimento do indivíduo, e
+          em retorno, iria aparecer a idade do usuário em anos, meses e dias.
+          O projeto foi desenvolvido com Vite, CSS, Node.js e JSX. E está
+          disponível para acesso no meu
+          <a href="https://github.com/ROpeixoto/Calculadora-Idade">github</a>
+          e na pré visualização da tela ao lado.
+        </p>
+        <iframe src="https://calculadora-idade-liart.vercel.app/" frameborder="5" class="calculadora"></iframe>
       </div>
-    </header>
-
-    <nav>
-      <a href="#sobre">Sobre Mim</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-
-    <section class="hidden" id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>
-        Atualmente cursando o 6° semestre de Engenharia da Computação na
-        universidade Senai Cimatec, onde adquiri conhecimentos e interesses nas
-        linguagens de programação Python, C, HTML e CSS, além de ampliar meu
-        interesse na área de computação.
-      </p>
-    </section>
-
-    <section class="hidden" id="projetos">
-      <h2>Projetos</h2>
-      <div class="inside">
-        <h3>Iniciação Científica Voluntária (ICV)</h3>
-        <div class="align">
-          <p>
-            Projeto na área de Deep Learning e IOT, a pesquisa envolve a criação
-            de um sistema que permitirá a redução de congestionamentos, e
-            consequentemente a ampliação da mobilidade em áreas urbanas.
-          </p>
-        </div>
+    </div>
+    <div class="inside">
+      <h3>Site com integração da API IMDB</h3>
+      <div class="align">
+        <p>
+          Desenvolvimento de um site em equipe (ainda em desenvolvimento),
+          utilizando da API entitulada IMDB a fim de fazer buscas em certos
+          filmes e retornar a trilha sonora dos mesmos. O site está disponível no meu
+          <a href="">github</a>
+          e na pré visualização da tela ao lado.
+        </p>
+        <iframe src="https://full-stack-apis.vercel.app/" frameborder="5" class="calculadora"></iframe>
       </div>
-      <div class="inside">
-        <h3>Jogo UNO em C</h3>
-        <div class="align">
-          <p>
-            Criação de um programa na linguagem de programação C, o qual
-            consistia no jogo de cartas UNO, utilizando estruturas de dados como
-            Árvore Binária e Pilha
-          </p>
-        </div>
+    </div>
+    <div class="inside">
+      <h3>Iniciação Científica Voluntária (ICV)</h3>
+      <div class="align">
+        <p>
+          Projeto de iniciação científica na área de Deep Learning e IOT.
+          Realizo uma pesquisa que envolve a revisão bibliográfica do estado
+          da arte de redes neurais na àrea de trafego urbano, e também a
+          criação de um sistema inteligente de um sistema que irá contribuir
+          com a redução de congestionamentos, e, consequentemente na ampliação
+          da mobilidade em áreas urbanas. Neste projeto foi utilizado a
+          ferramenta SUMO, aliada a API TraCI e a linguagem de programação
+          Python.
+        </p>
       </div>
-      <div class="inside">
-        <h3>Ticket Generator - Frontend Mentor</h3>
-        <div class="align">
-          <p>
-            Desafio da plataforma online Frontend Mentor, onde o objetivo
-            consistia em recriar um site seguindo o design proposto pela
-            plataforma. Neste desafio, o usuário deveria inserir uma imagem, e
-            algumas informações, como o seu nome completo, email e conta do
-            Github, e como resultado, o site encaminharia o usuário para outra
-            janela, com um ticket gerado para o evento. O projeto foi
-            desenvolvido com HTML, CSS e JavaScript. E está disponível para acesso
-            no meu github e na pré visualização da tela ao lado.
-          </p>
-        </div>
+    </div>
+    <div class="inside">
+      <h3>Jogo UNO em C</h3>
+      <div class="align">
+        <p>
+          Criação de um programa na linguagem de programação C durante a
+          matéria de Estrutura de dados. O trabalho consiste em uma simulação
+          do jogo de cartas UNO, utilizando estruturas de dados como Árvore
+          binária e Pilha, além do uso de outras bibliotecas e ponteiros.
+        </p>
       </div>
-      <div class="inside">
-        <h3>Calculadora de Idade - Frontend Mentor</h3>
-        <div class="align">
-          <p>
-            Desafio da plataforma online Frontend Mentor, no qual o objetivo
-            consistia em recriar um site seguindo o design proposto pela
-            plataforma. Neste desafio, o usuário deveria criar uma calculadora
-            de idade, onde seria inserida a data de nascimento do indivíduo, e
-            em retorno, iria aparecer a idade do usuário em anos, meses e dias.
-            O projeto foi desenvolvido com Vite, CSS, Node.js e JSX. E está
-            disponível para acesso no meu github e na pré visualização da tela
-            ao lado.
-          </p>
-          <iframe
-            src="https://calculadora-idade-liart.vercel.app/"
-            frameborder="0"
-          ></iframe>
-        </div>
+    </div>
+  </section>
+  <section class="hidden" id="eventos">
+    <h2>Participação em Eventos</h2>
+    <div class="inside">
+      <h3>NASA Space Apps</h3>
+      <div class="align">
+        <p>
+          Participação no Hackathon da NASA entitulado Space Apps, onde pude desenvolver um projeto utilizando os dados
+          obtidos por satélites da Nasa, e desenvolver um protótipo de jogo interativo e alcançar o top 10 regional, com
+          minha equipe BrazilianStorm
+        </p>
       </div>
-    </section>
+  </section>
+  <section class="hidden" id="contato">
+    <h2>Contato</h2>
+    <p>
+      Você pode me contatar através do e-mail:
+      <a href="mailto:seuemail@example.com">rpeixoto07.rp@gmail.com</a>
+    </p>
+    <p>
+      Visualizar os meus projetos no
+      <a href="https://github.com/ROpeixoto">Github</a>
+    </p>
+    <p>
+      Ou me encontrar no
+      <a href="https://www.linkedin.com/in/rodrigoopeixoto">LinkedIn</a>
+    </p>
+  </section>
 
-    <section class="hidden" id="contato">
-      <h2>Contato</h2>
-      <p>
-        Você pode me contatar através do e-mail:
-        <a href="mailto:seuemail@example.com">rpeixoto07.rp@gmail.com</a>
-      </p>
-      <p>
-        Visualizar os meus projetos no
-        <a href="https://github.com/ROpeixoto">Github</a>
-      </p>
-      <p>
-        Ou me encontrar no
-        <a href="https://www.linkedin.com/in/rodrigoopeixoto">LinkedIn</a>
-      </p>
-    </section>
-
-    <footer>
-      <p>Rodrigo O. Peixoto</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <p>Rodrigo O. Peixoto</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 </html>
